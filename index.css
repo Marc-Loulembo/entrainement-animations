@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: rgb(0, 61, 92);
+  color: white;
+  transform: translateY(-100px);
+  animation-name: npk;
+  animation-delay: .5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* nav:hover{
+  opacity: 1;
+  animation-duration: 1s;
+  transition-delay: 3s;
+  transition-duration: 1s;
+} */
+
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+nav li {
+  list-style: none;
+  padding: 10px;
+  margin: 0 10px;
+  transform: scale(0);
+  animation-name: k2;
+  animation-delay: 1s;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes k2 {
+  0%{
+
+    transform: scale(0);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+
+}
+
+nav li:hover {
+  background-color: #ffffff44;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding: 30px;
+}
+
+@keyframes npk {
+  0%{
+    transform: translateY(-100px) 
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+p{
+  transform: translateY(-100px);
+  opacity: 0;
+  animation-name: pk2;
+  animation-delay: 3s;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes pk2 {
+  0%{
+    opacity: 0;
+    transform: translateY(-100px) 
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1{
+  transform: translateY(-100px);
+  opacity: 0;
+  animation-name: pk2;
+  animation-delay: 2.5s;
+  animation-duration: .9s;
+  animation-fill-mode: forwards;
+}
