@@ -1,0 +1,27 @@
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+}
+
+div {
+  width: 10vw;
+  height: 10vh;
+  background-color: #f15bb5;
+  transition: 1s;
+   /* yellow : '#fee440'  */
+}
+
+div:hover {
+background-color: #fee440;
+animation-duration: 1s;
+animation-delay: 1s;
+}

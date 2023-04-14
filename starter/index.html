@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATELIER 6</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" ></script>
+  <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+    <section class="stage">
+      <figure class="ball">
+        <span class="shadow"></span>
+        <span class="iris"></span>
+      </figure>
+    </section>
+
+  </main>
+
+  <script>
+
+    const main = document.querySelector('main')
+    
+    gsap.to('.ball', {
+      scale: .5,
+      ease: 'elastic.out',
+      stagger: {
+        each: 0.05,
+        from: 'center'
+      }
+    });
+
+    main.addEventListener('click', (e)=>{
+      gsap.to(e.target, {scale: 1, ease: 'elastic.out'});
+    })
+  </script>
+</body>
+
+</html>
